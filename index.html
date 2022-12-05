@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <main>
+    <div id="top">
+      <div id="pageviews">
+        <span id="pvNumber">100K</span> Pageviews
+      </div>
+      <div id="perMonth">
+        <span class="dolar">$</span><span id="monthNumber">16.00</span> / month
+      </div>
+    </div>
+    <input type="range" min="0" max="100" step="0.1" value="50">
+    <div id="billing">
+      <p>Monthly Billing </p>
+      <div id="switch"><div id="circle"></div></div>
+      <p> Yearly Billing</p>
+      <div id="discount"><span class="minus">-</span>25% <span class="discount">discount</span></div>
+    </div>
+    <div id="bottom">
+      <div id="benefits">
+        <p><img src="./images/icon-check.svg" alt="check">Unlimited websites</p>
+        <p><img src="./images/icon-check.svg" alt="check">100% data ownership</p>
+        <p><img src="./images/icon-check.svg" alt="check">Email reports</p>
+      </div>
+      <button>Start my trial</button>
+    </div>
+  </main>
+  <script src="./dist/app.js"></script>
+</body>
+</html>
